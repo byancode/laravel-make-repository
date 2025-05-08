@@ -1,5 +1,5 @@
 {
-    "name": "byancode/laravel-repository",
+    "name": "byancode/laravel-make-repository",
     "description": "Simple repository pattern implementation for Laravel",
     "type": "library",
     "license": "MIT",
