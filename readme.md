@@ -27,9 +27,17 @@ El comando `make:repository` crea automáticamente un nuevo repositorio en el di
 php artisan make:repository UserRepository
 ```
 
+También puedes especificar el modelo que utilizará el repositorio directamente con la opción `--model` (o `-m`):
+
+```bash
+php artisan make:repository UserRepository --model=User
+```
+
+Esto generará un repositorio con la clase del modelo ya configurada.
+
 ### Implementar un repositorio
 
-Una vez creado el repositorio, debe especificar el modelo que utilizará:
+Una vez creado el repositorio, debe especificar el modelo que utilizará (si no lo ha hecho con la opción `--model`):
 
 ```php
 <?php
