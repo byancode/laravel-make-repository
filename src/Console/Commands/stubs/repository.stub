@@ -1,0 +1,24 @@
+<?php
+
+namespace DummyNamespace;
+
+use Byancode\Repository\Repositories\BaseRepository;
+use Illuminate\Database\Eloquent\Model;
+
+class DummyClass extends BaseRepository
+{
+    /**
+     * Model class for this repository.
+     *
+     * @var string
+     */
+    protected $modelClass = Model::class;
+    
+    /**
+     * Constructor.
+     */
+    public function __construct()
+    {
+        $this->model = app($this->modelClass);
+    }
+}
